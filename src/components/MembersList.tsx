@@ -95,7 +95,7 @@ const MembersList: React.FC<MembersListProps> = ({ members, onAddMember, onEditM
               )}
               <div>
                 <p className="text-sm text-gray-500">Total Contributions</p>
-                <p className="text-2xl font-bold text-green-600">KSh {member.totalContributions.toLocaleString()}</p>
+                <p className="text-2xl font-bold text-green-600">KES {member.totalContributions.toLocaleString()}</p>
               </div>
               {member.lastContribution && (
                 <div>
@@ -207,7 +207,7 @@ const MembersList: React.FC<MembersListProps> = ({ members, onAddMember, onEditM
               <div className="pt-3 border-t border-gray-200">
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500">Total Contributions</span>
-                  <span className="font-semibold text-green-600">KSh {member.totalContributions.toLocaleString()}</span>
+                  <span className="font-semibold text-green-600">KES {member.totalContributions.toLocaleString()}</span>
                 </div>
               </div>
 

@@ -56,20 +56,20 @@ const Dashboard: React.FC<DashboardProps> = ({ stats, recentContributions }) => 
         />
         <StatCard
           title="Total Contributions"
-          value={`KSh ${stats.totalContributions.toLocaleString()}`}
+          value={`KES ${stats.totalContributions.toLocaleString()}`}
           icon={DollarSign}
           color="#10B981"
         />
         <StatCard
           title="This Month"
-          value={`KSh ${stats.currentMonthContributions.toLocaleString()}`}
+          value={`KES ${stats.currentMonthContributions.toLocaleString()}`}
           icon={TrendingUp}
           color="#F59E0B"
           subtitle={`${progressPercentage.toFixed(1)}% of target`}
         />
         <StatCard
           title="Monthly Target"
-          value={`KSh ${stats.monthlyTarget.toLocaleString()}`}
+          value={`KES ${stats.monthlyTarget.toLocaleString()}`}
           icon={Target}
           color="#8B5CF6"
         />
@@ -86,7 +86,7 @@ const Dashboard: React.FC<DashboardProps> = ({ stats, recentContributions }) => 
         <div className="space-y-4">
           <div className="flex justify-between text-sm">
             <span className="text-gray-600">
-              KSh {stats.currentMonthContributions.toLocaleString()} of KSh {stats.monthlyTarget.toLocaleString()}
+              KES {stats.currentMonthContributions.toLocaleString()} of KES {stats.monthlyTarget.toLocaleString()}
             </span>
             <span className="font-medium text-blue-600">{progressPercentage.toFixed(1)}%</span>
           </div>
@@ -100,7 +100,7 @@ const Dashboard: React.FC<DashboardProps> = ({ stats, recentContributions }) => 
             <div className="flex items-center space-x-2 text-amber-600">
               <AlertCircle className="h-4 w-4" />
               <span className="text-sm">
-                KSh {(stats.monthlyTarget - stats.currentMonthContributions).toLocaleString()} remaining to reach target
+                KES {(stats.monthlyTarget - stats.currentMonthContributions).toLocaleString()} remaining to reach target
               </span>
             </div>
           )}
@@ -126,7 +126,7 @@ const Dashboard: React.FC<DashboardProps> = ({ stats, recentContributions }) => 
                 </div>
               </div>
               <div className="text-right">
-                <p className="font-semibold text-green-600">+KSh {contribution.amount.toLocaleString()}</p>
+                <p className="font-semibold text-green-600">+KES {contribution.amount.toLocaleString()}</p>
                 <p className="text-sm text-gray-500">{new Date(contribution.date).toLocaleDateString()}</p>
               </div>
             </div>

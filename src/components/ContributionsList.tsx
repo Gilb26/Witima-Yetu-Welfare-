@@ -78,7 +78,7 @@ const ContributionsList: React.FC<ContributionsListProps> = ({ contributions, on
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h2 className="text-2xl font-bold text-gray-900">Contributions Management</h2>
-          <p className="text-gray-600">Total: KSh {totalAmount.toLocaleString()} ({filteredContributions.length} contributions)</p>
+          <p className="text-gray-600">Total: KES {totalAmount.toLocaleString()} ({filteredContributions.length} contributions)</p>
         </div>
         <div className="flex space-x-3">
           <button className="bg-green-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center space-x-2">
@@ -180,7 +180,7 @@ const ContributionsList: React.FC<ContributionsListProps> = ({ contributions, on
                     <div className="flex items-center space-x-1">
                       <DollarSign className="h-4 w-4 text-green-600" />
                       <span className="font-semibold text-green-600">
-                        KSh {contribution.amount.toLocaleString()}
+                        KES {contribution.amount.toLocaleString()}
                       </span>
                     </div>
                   </td>
